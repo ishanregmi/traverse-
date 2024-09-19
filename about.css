@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5ede4;
+  color: #3b3b3b;
+}
+
+
+
+
+.designer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 100px;
+}
+
+.image-container {
+  max-width: 1000px;
+  /* margin-right: 40px; */
+}
+
+.about-box {
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 1.2rem;
+ 
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3b3b3b;
+}
+
+.about-box p {
+  font-size: 26px;
+  line-height: 1.6;
+  color: #3b3b3b;
+
+}
+
+.designer img {
+  width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+    border-radius: 50%;
+    margin: 15px;
+
+ 
+
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+
+.skill-tag:hover {
+  background-color: #4338ca;
+  color: white;
+  transform: translateY(-2px);
+}
+.inline-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  float: left; /* Makes the image float to the left of the paragraph */
+  margin-right: 20px; /* Adds space between image and text */
+  border-radius: 50%; /* Keeps the circular image */
+}

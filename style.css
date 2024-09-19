@@ -1,0 +1,156 @@
+body {
+  background-color: rgb(226, 235, 242);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.myorder1 {
+  background: linear-gradient(45deg, #7F00FF, #E100FF);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mylis1 {
+  list-style: none;
+  margin-right: 5rem;
+  font-weight: bold;
+}
+
+.mylis1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mylis1 a:hover {
+  background-color: #00A36C;
+  color: white;
+  transform: scale(1.1);
+}
+
+.mylis1:first-child {
+  margin-right: auto;
+}
+
+.mybutton1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  background-color: #925b71;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+.mybutton1:hover {
+  background: #00A36C;
+  transform: translateY(-3px);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #7F00FF;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.traverse-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.traverse-box {
+  background-color: #594571;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 45%;
+  max-width: 450px;
+  color: white;
+}
+
+.traverse-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.traverse-box h3 {
+  margin-top: 0;
+  color: #00A36C;
+  font-size: 1.8rem;
+}
+
+.traverse-box p {
+  color: #f5f5f5;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.header-section {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/surveyimage.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.header-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
